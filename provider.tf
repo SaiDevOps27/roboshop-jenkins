@@ -1,3 +1,11 @@
+terraform {
+  required_providers {
+    jenkins = {
+      source = "registry.terraform.io/taiidani/jenkins"
+    }
+  }
+}
+
 
 provider "jenkins" {
   server_url = "http://172.31.6.19:8080"
