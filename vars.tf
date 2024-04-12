@@ -4,7 +4,6 @@ variable "folders" {
 
 variable "m-jobs" {
   default = [
-    { name = "roboshop", folder = "Infra", repo_url = "https://github.com/SaiDevOps27/roboshop-infra.git" },
     { name = "frontend", folder = "CI-Pipeline", repo_url = "https://github.com/SaiDevOps27/frontend.git" },
     { name = "user", folder = "CI-Pipeline", repo_url = "https://github.com/SaiDevOps27/user.git" },
     { name = "cart", folder = "CI-Pipeline", repo_url = "https://github.com/SaiDevOps27/cart.git" },
@@ -16,7 +15,9 @@ variable "m-jobs" {
 }
 
 variable "s-jobs" {
-  default = []
+  default = [
+    { name = "roboshop", folder = "Infra", repo_url = "https://github.com/SaiDevOps27/roboshop-infra.git" }
+  ]
 }
 
 variable "force" {
