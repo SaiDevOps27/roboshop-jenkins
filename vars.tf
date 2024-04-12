@@ -2,7 +2,7 @@ variable "folders" {
   default = ["Infra", "CI-Pipeline"]
 }
 
-variable "jobs" {
+variable "m-jobs" {
   default = [
     { name = "roboshop", folder = "Infra", repo_url = "https://github.com/SaiDevOps27/roboshop-infra.git" },
     { name = "frontend", folder = "CI-Pipeline", repo_url = "https://github.com/SaiDevOps27/frontend.git" },
@@ -13,4 +13,12 @@ variable "jobs" {
     { name = "payment", folder = "CI-Pipeline", repo_url = "https://github.com/SaiDevOps27/payment.git" }
 
   ]
+}
+
+variable "s-jobs" {
+  default = []
+}
+
+variable "force" {
+  default = false
 }
